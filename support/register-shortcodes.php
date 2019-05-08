@@ -210,6 +210,12 @@ function plans_func($atts){
             'class' => ''
             
         ), $atts);
+        
+    if( !$args['text'] ){
+        $text = 'View PDF';
+    }else{
+        $text = $args['text'];
+    }
 
     $pdf = '';
     $pdf .= '<div class="uk-grid uk-child-width-1-3@m uk-margin-top floor-plan-downloads" uk-grid>';
@@ -220,7 +226,7 @@ function plans_func($atts){
             $nicename = ucwords( str_ireplace('-', ' ', $plan['file']['title'] ) );
             $pdf .= '<div>
                 <h3 class="uk-text-center">'.$nicename.'</h3>
-                <a class="button button-full" href="'.$plan['file']['url'].'">'.$args['text'].'</a>';
+                <a class="button button-full" href="'.$plan['file']['url'].'">'.$text.'</a>';
                 
             if( $plan['floor_diagram']){
                 
