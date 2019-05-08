@@ -10,7 +10,7 @@ function get_quarters($args=null){
     $ar = array(669, 671, 673, 675);
     $quart = '';
 
-    $quart .= '<div class="uk-flex uk-flex-between">';
+    $quart .= '<div class="uk-child-width-1-4@l uk-child-width-1-2@m" uk-grid>';
     
     foreach( $ar as $quarter ){
         
@@ -22,12 +22,13 @@ function get_quarters($args=null){
             $is_sold = ' is_sold';    
             
         };
-        
+        $quart .= '<div>';
         $quart .= '<div class="module quarter'.$is_sold.'">';
         $quart .= '<a href="'.$url.'" class="quarter-wrapper-link">';
         $quart .= '<span style="background-image: url('.$img['url'].')"></span>';
         $quart .= get_field('quarter_copy', $quarter);
         $quart .= '</a></div>';
+        $quart .= '</div>';
         
     }
     

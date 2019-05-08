@@ -33,15 +33,16 @@
             <div class="uk-container uk-height-1-1">
                 <div class="uk-grid uk-flex uk-flex-middle uk-flex-center uk-height-1-1">
                     
-                    <div class="uk-width-1-3@m uk-width-2-3">
+                    <div class="uk-width-2-3">
                         <a href="<?php echo home_url() ;?>"><img src="<?php bloginfo('template_directory') ;?>/images/wr_logotype.svg" alt="The Winerack Apartments" class="logo-type" /></a>
                     </div>
 
-                    <div class="uk-width-2-3@m uk-width-1-3 uk-flex uk-flex-middle uk-flex-right">
+                    <div class="uk-width-1-3 uk-flex uk-flex-middle uk-flex-right">
                         <nav id="site-navigation" class="main-navigation">
                             <?php get_template_part('support/partials/mobilemenu') ;?>
                         </nav>
                     </div>
+                    
                 </div>
             </div>
 

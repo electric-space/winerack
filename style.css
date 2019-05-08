@@ -1,7 +1,7 @@
 
 /* THIS CSS WAS COMPILED AND OPTIMIZED, USING THE WP COMPILER PLUGIN */
 /* https://bytes.co */
-/* Last Compiled: 2019-05-08 4:30:23 UTC */
+/* Last Compiled: 2019-05-08 7:34:47 UTC */
 
 /*!
 Theme Name: winerack
@@ -1242,7 +1242,6 @@ h2 a {
   text-decoration: none !important;
 }
 .main-navigation {
-  margin-top: -3px;
   line-height: 20px;
 }
 .main-navigation a:link {
@@ -1280,19 +1279,23 @@ a.open-menu:hover {
   color: #ffffff !important;
 }
 a.open-menu {
-  font-weight: 700;
-  text-transform: uppercase;
-  font-family: 'Josefin Sans', sans-serif;
-  font-size: 1.8rem;
-  margin: 0;
-  line-height: 1;
   color: #fafafa;
   text-decoration: none;
 }
 a.open-menu svg {
   float: left;
-  margin-right: 12px;
-  margin-top: -3px;
+  margin: 1px 12px 0 0;
+}
+p.menu-title {
+  display: none;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 1.8rem;
+  margin: 3px 0 0 0;
+  line-height: 20px;
+  color: #fafafa;
+  float: right;
 }
 /**
  * close menu
@@ -1628,8 +1631,9 @@ section.gallery {
 .module.quarter {
   text-align: center;
   background-color: #e7ecf3;
-  width: 24%;
   padding: 48px 12px 12px;
+  height: 100%;
+  position: relative;
 }
 .module.quarter span {
   display: block;
@@ -1921,6 +1925,11 @@ div.wpcf7 .ajax-loader {
   top: 0;
   width: 100%;
   z-index: 1;
+  /*
+    div{
+        outline:1px dotted #f00;
+    }
+*/
 }
 .site-header > * {
   z-index: 1000;
@@ -1953,7 +1962,6 @@ div.wpcf7 .ajax-loader {
   padding-top: 100px;
 }
 .site-header img {
-  margin: 0 auto;
   display: block;
 }
 .nav-strip img {
@@ -2071,7 +2079,7 @@ body.loaded {
 /**
  * RWD
  */
-/* ire hack */
+/* ie hack */
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
   body {
     background-image: url('images/bg-tile.png');
@@ -2090,6 +2098,23 @@ body.loaded {
   .right-column {
     display: none;
   }
+}
+@media (min-width: 640px) {
+  p.menu-title {
+    display: block;
+  }
+}
+@media (max-width: 767px) {
+  .intro img {
+    float: none;
+  }
+}
+@media (max-width: 1120px) {
+  /*
+    .page-sections .module{
+        display:inline-block;
+    }
+*/
 }
 @media (max-width: 1200px) {
   main > .uk-container {

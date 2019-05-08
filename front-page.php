@@ -32,7 +32,7 @@ get_header();?>
                 <?php // get the quarter content from the quarter pages;?>
 
                     <section class="page-sections">
-                            <?php echo get_quarters() ;?>
+                        <?php echo get_quarters() ;?>
                     </section>
                         
                     

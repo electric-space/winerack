@@ -1,7 +1,8 @@
 <!-- This is the off-canvas sidebar -->
 
 
-<a href="#offcanvas-overlay" uk-toggle uk-icon="icon: menu" class="open-menu">menu</a>
+<a href="#offcanvas-overlay" uk-toggle uk-icon="icon: menu" class="open-menu"></a>
+<p class="menu-title"><a href="#offcanvas-overlay" class="open-menu" uk-toggle>menu</a></p>
 
 <div id="offcanvas-overlay" uk-offcanvas="flip: true">
     
