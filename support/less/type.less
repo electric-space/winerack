@@ -1,0 +1,226 @@
+// type
+
+.banner h1{
+    font-size: 7rem;
+    color:@white;
+    margin:0 auto @baseline;
+    position: relative;
+    //top: 132px;
+}
+
+
+
+
+.nobanner h1{
+    color:@blue;
+    font-size:7rem;
+    position:relative;
+    top:auto;
+    text-align: center;
+    padding-top:85px;
+    margin:0;
+    padding:0;
+    width:100%;
+}
+
+
+h1{
+    font-size:4.8rem;
+    text-align: center;
+    margin-bottom:@baseline*2;
+}
+
+
+h2{
+    font-size:4.8rem;
+    text-align: center;
+}
+
+.first-section  div:nth-child(1) div  h2:before,
+.first-section  div:nth-child(1)   h2:before{
+    //content:none;
+
+}
+
+h2:before{
+    content:'';
+    display:block;
+    background-image: url('images/divider.png');
+    background-repeat: no-repeat;
+    width:55px;
+    height: 54px;
+    margin:0 auto 30px;
+
+}
+
+.first-section > h2{
+    //margin-top:0;
+    &:before{
+        content:none;
+    }
+    
+}
+
+
+
+
+h2.nologo{
+    margin:@baseline 0 0 10px;
+}
+
+
+h2.nologo:before{
+    content:none;
+    margin:0;
+
+}
+
+.page-sections{
+    color:@blue;
+
+}
+
+
+h3{
+    color: @grey-dark;
+    font-size:1.8rem;
+    font-weight:700;
+    font-family: @font-body;
+}
+
+.floor-plan-downloads h3{
+    color:@grey;
+    font-weight:600;
+}
+
+
+.module.quarter h3{
+    text-transform: uppercase;
+    font-weight:700;
+    font-size:2rem;
+    color:@blue-mid;
+    font-family: @font-body;    
+}
+
+
+
+
+footer h3{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-family: @font-body;
+}
+
+p{
+    font-size: 1.6rem;
+    margin:1em 0 0;
+}
+
+
+p.site-description{
+    font-size: 1rem;
+    color: #fff;
+    margin:10px 0 0;
+    line-height: 1;
+    font-family: 'futura-pt', sans-serif;
+}
+
+p.video-credit{
+    margin-top:.5em;
+}
+
+
+
+
+
+h1 + p + p{
+    font-weight:700;
+    font-size:1.8rem;
+}
+
+/* travel table */
+.travel-wrapper p{
+    font-size:1.2rem;
+}
+
+
+.travel-table dl{
+    font-size:1.2rem;
+    font-weight:700;
+    dd{
+        margin:0;
+    }
+}
+
+.travel-table .dest,
+.travel-table .dist{
+    font-weight:700;
+}
+
+
+
+
+
+.brochure-link p{
+    font-size:1.4rem;
+    color:#fff;
+    margin:0 0 10px 0;
+}
+
+
+
+main strong{
+    font-size: 1.8rem;
+}
+
+
+/* renumber ol's */
+
+ol {
+  list-style: none;
+  width:50%;
+}
+
+
+ol li:before {
+  counter-increment: mycounter;
+  content: counter(mycounter) ". ";
+}
+
+ol:first-of-type {
+  counter-reset: mycounter;
+}
+
+
+main ul{
+    list-style: none;
+    li{
+        text-indent: -1em;
+        &:before{
+            content: "\2014\a0";
+            text-indent: -1em;
+        }
+    }
+    
+}
+
+
+
+
+
+dl{
+    margin:1em 0 0;
+
+}
+
+
+.travel-table dl{
+    margin:0;
+}
+
+
+dt{
+    width:100px;
+    float:left;
+}

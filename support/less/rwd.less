@@ -1,0 +1,142 @@
+/**
+ * RWD
+ */
+ 
+ 
+ 
+/* ire hack */
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    
+    body{
+        background-image: url('images/bg-tile.png');
+    }
+
+    main{
+        display:block;
+    }
+    
+    main > .uk-container{ 
+        margin-left:auto !important; 
+        margin-right:auto !important;
+        border-color:@grey-light;
+        border-width:0 2px 0 2px;
+        border-style: solid;
+        
+    }
+    
+    .left-column, .right-column{
+        display:none;
+    }
+
+    
+}
+ 
+
+
+@media(max-width:1200px){
+    main > .uk-container{
+        border:none;    
+    }
+    .left-column,
+    .right-column{
+        background-image:none;
+    }
+}
+
+
+
+
+@media(max-width:959px){
+    
+     
+    footer.site-footer{
+        a, p{
+            font-size: 1.4rem;
+     
+        }
+    }
+    
+    
+    .banner{
+        //height: 40vh;
+    }
+    
+    
+    p, .travel-wrapper, main ul{
+        text-align:center;
+    }
+    
+    .travel-table{
+        justify-content: center;
+    }
+    
+    
+    
+     
+     
+ }
+ 
+ 
+ 
+ 
+ 
+ 
+
+@media(max-width:720px){
+    .brochure-link{
+        width:100%;
+    }
+}
+ 
+ 
+@media(max-width:640px){
+    
+    #main .main-gallery-wrapper .row > div{
+        width:100%;
+    }
+    
+}
+ 
+ 
+ 
+ @media(max-width:530px){
+     a.button{
+         width:100%;
+         margin:1em 0 0;
+         &:first-child{
+             margin-top:0;
+         }
+     }
+ }
+ 
+ 
+ 
+ 
+@media(max-width:480px){
+    .banner h1,
+    h1{
+        font-size:4.4rem;
+    }
+    
+    h2{
+        font-size:3.8rem;    
+    }
+    
+    
+}
+
+
+@media(max-width:479px){
+    
+    .site-header .custom-logo{
+        width:50%;
+    }
+    
+    .headerlogo-wrapper{
+        padding-top:10vh;
+    }
+    
+    
+}
+
+

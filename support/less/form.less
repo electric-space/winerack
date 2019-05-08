@@ -1,0 +1,129 @@
+/*
+ * Contact form 7
+ */
+
+
+.wpcf7-form .uk-form-label{
+    font-size:2.4rem;
+    color: @blue;
+    .uk-margin{
+        overflow:hidden;
+        
+    }
+}
+
+span.wpcf7-list-item{
+    margin:0 1em 0 0;
+}
+
+
+
+.marketing-wrapper{
+    
+    padding-left:@baseline+10;
+    position:relative;
+    
+    .marketing{
+        margin:0 1em 0 0;
+        position:absolute;
+        left:0;
+    }
+    
+    .wpcf7-list-item{
+        margin:0;
+    }
+    
+}
+
+
+
+input[type],
+textarea{
+    width:100%;
+    border-radius: 0;
+    padding:@baseline/3 @baseline/2;
+    font-size:2rem;
+    font-family: @font-body;
+    border:none;
+    background-color: @blue-pale;
+}
+
+input[type="checkbox"],
+input[type="radio"]{
+    width:auto;
+    height:24px;
+}
+
+
+
+
+input[type="submit"]{
+    width:auto;
+    color:@white;
+    background-color: @blue;
+}
+
+input[type]:focus,
+textarea:focus{
+    outline:2px solid @blue;
+    outline-offset:0;
+}
+
+input[type="checkbox"]:focus{
+    outline:none;
+}
+
+
+input[type="submit"]:focus{
+    outline:none;
+}
+
+
+div.wpcf7-response-output{
+    margin:@baseline 0 0;
+    border:2px solid @blue;
+    padding:@baseline;
+    text-align:center;
+}
+
+label{
+    clear:both;
+    margin:0!important;
+}
+
+
+
+/* Custom CF7 Loader */
+div.wpcf7 .ajax-loader {
+    background-image: url( '../../images/ajax-loader.gif');
+    margin-left: 10px;
+}
+
+
+
+
+
+// search form
+
+.search-form{
+    margin:@baseline auto 0;
+    position:relative;
+    width:70%;
+    .search-field{
+        padding-right:100px;
+    }
+    .search-submit{
+        position: absolute;
+        right:0;
+        top:0;
+        height:46px;
+    }
+}
+
+
+
+
+
+
+
+

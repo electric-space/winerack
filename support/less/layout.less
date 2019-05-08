@@ -1,0 +1,481 @@
+/**
+ * Tiles
+ */
+
+
+main.bgtile{
+    display: grid;
+    grid-template-columns: auto minmax(auto, 1200px) auto;
+}
+
+
+.left-column{
+    background-image: url( 'images/bg-tile.png');
+    background-position: right top;
+    width:100%;
+    height:100%;
+
+}
+
+.right-column{
+    background-image: url( 'images/bg-tile.png');
+    width:100%;
+    height:100%;
+
+}
+
+
+
+
+
+
+
+/* homepage */
+.home section{
+    padding:45px 0;
+}
+
+
+
+.hentry{
+    margin:@baseline*2 0 0;
+    &:first-of-type{
+        margin-top:0;
+    }
+}
+
+
+section.intro img{
+    max-width:248px;
+}
+
+
+
+/* inner pages */
+
+
+main > .uk-container{
+    background-color: @white;
+    border-color:@grey-light;
+    border-width:0 0px 0 2px;
+    border-style: solid;
+}
+
+
+
+main.site-main > div{
+    padding-top:@baseline*2;
+    padding-bottom: @baseline*2;
+    position: relative;
+}
+
+
+main.nobanner{
+    padding-top:85px;
+}
+
+
+.banner{
+    height: 500px;
+    //margin-top:85px;
+    padding-top:132px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    &:before{
+        content:'';
+        position:absolute;
+        left:0;
+        top:0;
+        background-color: rgba(0,0,0,0.2);
+        width:100%;
+        height:100%;
+    }
+}
+
+.home .banner{
+    margin:0;
+    height:100%;
+    max-height:660px;
+    padding:0;
+    &:before{
+        content:none;
+    }
+}
+
+
+.banner .title-wrapper{
+    position: relative;
+    text-align: center;
+    left:0;
+    right:0;
+    //top:@baseline*2;   
+}
+
+
+/*
+.banner.noimg{
+    height:auto;
+    margin:0;
+    padding-top:85px;
+    background-color: @white;
+}
+*/
+
+
+/*
+ * page sections
+ */
+ 
+
+section{
+    width: 100%;
+    margin:0;
+    &.gallery{
+        margin:0;
+    }
+}
+
+
+// quarter modules
+
+.module.quarter{
+    text-align:center;
+    background-color: lighten(@blue-pale, 10%);
+    width:24%;
+    padding:@baseline*2 @baseline/2 @baseline/2;
+    
+    
+    span{
+        display:block;
+        width:150px;
+        height:220px;
+        margin:0 auto 1em;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center top;
+    }
+ 
+}
+
+
+
+.page-template-page-apart-inner .module.quarter{
+    margin-top:@baseline;
+}
+
+
+
+.module a.button{
+    display:block;
+}
+
+.page-template-page-apartments{
+    .module{
+        background-color:transparent;
+        a.button{
+            display:none;
+        }
+    }
+   
+}
+
+.module.is_sold{
+    background-color:@blue-pale;
+    h3,p{
+        color:@white;
+    }
+    
+    
+}
+
+
+
+
+/* Slider */
+.uk-slideshow-items li{
+    margin:0;
+}
+
+
+/* video */
+
+.home #player {
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    overflow: hidden;
+}
+
+.home #player iframe {
+    width: 100vw;
+    height: 56.25vw; /* Given a 16:9 aspect ratio, 9/16*100 = 56.25 */
+    min-height: 100vh;
+    min-width: 177.77vh; /* Given a 16:9 aspect ratio, 16/9*100 = 177.77 */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.row.video--wrapper div,
+.row.pano--wrapper div{
+    width:100%!important;
+}
+
+
+.row.pano--wrapper iframe{
+    width:100%!important;
+    height:350px;
+}
+
+
+
+.main-gallery-wrapper .row.video--wrapper > div .image-wrap{
+    height:auto;
+}
+
+
+
+
+
+#player iframe{
+    width:100%!important;
+}
+
+
+
+/*
+.home .banner{
+    background-image: url('../../images/penthouse.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width:100%;
+    height:100vh;
+    position: relative;
+    z-index: 1;
+}
+*/
+
+
+
+
+
+
+
+.phasees--wrapper{
+    position: relative;
+}
+
+.phasees--wrapper img{
+    position: absolute;
+    bottom:0;
+    margin:0 auto;
+    left:0;
+    right:0;
+}
+
+
+
+/* homepage */
+.lightbox--wrapper > div{
+    
+    margin-top:@baseline!important;
+    text-align:center;
+}
+
+
+.gallery img{
+    //display:inline-block;
+
+}
+
+
+
+
+
+
+
+
+.brochure-link{
+    font-size:0;
+    background-color: @grey-dark;
+    width: 650px;
+    max-width:650px;
+    position: absolute;
+    bottom:0;
+    left:0;
+    right:0;
+    margin:0 auto;
+    text-align: center;
+    padding: 10px;
+
+}
+
+
+
+
+
+
+
+
+/**
+ * Main gallery
+ */
+ 
+ 
+.main-gallery-wrapper{
+    margin-left:-10px;
+    .row{
+        display: flex;
+        flex-wrap: wrap;
+
+        > div{
+            //background-color:#eee;
+            padding-left:10px;
+            margin-top:10px;
+            
+            a{
+                display:block;
+                height:100%;
+            }
+            .image-wrap{
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center center;
+                height:350px;
+                width:100%;
+            }
+        }
+    }
+    
+    .row:nth-child(odd){
+        > div:nth-child(1){
+            width:40%;
+        }
+        > div:nth-child(2){
+            width:60%;
+        }
+    }
+    
+    .row:nth-child(even){
+        > div:nth-child(1){
+            width:60%;
+        }
+        > div:nth-child(2){
+            width:40%;
+        }
+    }
+    
+    
+    
+    
+    
+    
+}
+ 
+ 
+ 
+ 
+.main-gallery > div:nth-child(odd){
+ 
+        outline:1px dotted red;
+
+    
+    
+}
+
+
+
+
+
+
+
+/**
+ * Apartments
+ */
+
+.apartments [class*='uk-width']{
+    position: relative;
+}
+
+
+.apartments .phase p img:first-of-type{
+    position: absolute;
+    left:26px;
+    top:-50px;
+}
+
+.apartments .phase p img{
+    margin:0px auto;
+    display:block;
+}
+
+
+
+
+
+/**
+ * travel table
+ */
+ 
+ .travel-wrapper{
+    margin-top:1em;
+    
+    .travel-table{
+        display:flex;
+    }
+    
+}
+
+
+
+
+.dist{
+    padding-left:@baseline;
+}
+
+
+/**
+ * 404, archive
+ */
+
+.error-404,
+.search{
+    text-align:center;
+}
+
+// blog
+
+.blog article{
+    border-top: 12px solid @blue-pale;
+    padding-top:@baseline*2;
+    margin-top:@baseline*2;
+    &:first-child{
+        border-top:none;
+        margin:0;
+        padding:0;
+    }
+    
+    img{
+        float:left;
+        margin-right:@baseline;
+    }
+    
+    .entry-header{
+        margin-bottom:@baseline*2;
+        text-align:center;
+    }
+    
+    .entry-footer{
+        margin-top:@baseline;
+    }
+    
+    
+}
+
+
+
+
+

@@ -1,0 +1,15 @@
+
+
+body{
+    background-image: url('../../images/bg-tile.png');
+    color:#f00;
+}
+
+main{
+    display:block;
+}
+
+main > .uk-container{ 
+    margin-left:auto !important; 
+    margin-right:auto !important;
+}
