@@ -64,22 +64,21 @@ get_header();?>
                         </div>
                         
                     </div>
-                    
                     <?php  // quad
                         if( $columns = get_field('columns') ){
                             foreach( $columns as $column ){
                                 if( $column['acf_fc_layout'] == 'quad_columns'):;?>
-                                    <div class="uk-grid uk-margin-large-top uk-text-center floor-plan-icons" uk-grid>
-                                        <div class="uk-width-1-4@m">
+                                    <div class="uk-grid uk-margin-large-top uk-text-center floor-plan-icons uk-child-width-1-4@l uk-child-width-1-2@m" uk-grid>
+                                        <div>
                                             <?php echo $column['col1'] ;?>
                                         </div>
-                                        <div class="uk-width-1-4@m">
+                                        <div>
                                             <?php echo $column['col2'] ;?>
                                         </div>
-                                        <div class="uk-width-1-4@m">
+                                        <div>
                                             <?php echo $column['col3'] ;?>
                                         </div>
-                                        <div class="uk-width-1-4@m">
+                                        <div>
                                             <?php echo $column['col4'] ;?>
                                         </div>                
                                     </div>

@@ -1,7 +1,7 @@
 
 /* THIS CSS WAS COMPILED AND OPTIMIZED, USING THE WP COMPILER PLUGIN */
 /* https://bytes.co */
-/* Last Compiled: 2019-05-08 7:34:47 UTC */
+/* Last Compiled: 2019-05-08 9:02:36 UTC */
 
 /*!
 Theme Name: winerack
@@ -1412,6 +1412,11 @@ a.button:hover {
 .floor-plan-downloads a.button {
   background-color: #c6d2e1;
   color: #0071b9;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  width: 200px;
 }
 .button-small {
   width: 30%;
@@ -2104,11 +2109,6 @@ body.loaded {
     display: block;
   }
 }
-@media (max-width: 767px) {
-  .intro img {
-    float: none;
-  }
-}
 @media (max-width: 1120px) {
   /*
     .page-sections .module{
@@ -2132,11 +2132,21 @@ body.loaded {
   }
   p,
   .travel-wrapper,
-  main ul {
+  main ul,
+  main,
+  .intro {
     text-align: center;
   }
   .travel-table {
     justify-content: center;
+  }
+  .intro img {
+    float: none;
+  }
+  .alignleft,
+  .alignright {
+    float: none;
+    margin: 0;
   }
 }
 @media (max-width: 720px) {

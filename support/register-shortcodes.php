@@ -218,7 +218,7 @@ function plans_func($atts){
     }
 
     $pdf = '';
-    $pdf .= '<div class="uk-grid uk-child-width-1-3@m uk-margin-top floor-plan-downloads" uk-grid>';
+    $pdf .= '<div class="uk-grid uk-child-width-1-2@s uk-margin-top floor-plan-downloads uk-text-center" uk-grid>';
     if( $plans = get_field('floor_plan') ){
         
         foreach( $plans as $plan){
@@ -226,7 +226,7 @@ function plans_func($atts){
             $nicename = ucwords( str_ireplace('-', ' ', $plan['file']['title'] ) );
             $pdf .= '<div>
                 <h3 class="uk-text-center">'.$nicename.'</h3>
-                <a class="button button-full" href="'.$plan['file']['url'].'">'.$text.'</a>';
+                <a class="button" href="'.$plan['file']['url'].'">'.$text.'</a>';
                 
             if( $plan['floor_diagram']){
                 
