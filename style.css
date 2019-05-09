@@ -1,7 +1,7 @@
 
 /* THIS CSS WAS COMPILED AND OPTIMIZED, USING THE WP COMPILER PLUGIN */
 /* https://bytes.co */
-/* Last Compiled: 2019-05-08 9:02:36 UTC */
+/* Last Compiled: 2019-05-09 9:52:27 UTC */
 
 /*!
 Theme Name: winerack
@@ -1055,6 +1055,10 @@ p:first-child{
     margin-top:0;
 }
 */
+h1:first-child,
+h2:first-child {
+  margin-top: 0;
+}
 p,
 ul,
 ol,
@@ -1142,7 +1146,7 @@ h2.nologo:before {
   color: #0071b9;
 }
 h3 {
-  color: #404040;
+  color: #53606b;
   font-size: 1.8rem;
   font-weight: 700;
   font-family: 'Josefin Sans', sans-serif;
@@ -1248,6 +1252,12 @@ h2 a {
   color: #fafafa;
 }
 /* header nav */
+/**
+ * mobile menu
+ */
+.uk-offcanvas {
+  width: 100%;
+}
 .uk-offcanvas-bar {
   -moz-opacity: 0.9;
   -khtml-opacity: 0.9;
@@ -1261,7 +1271,7 @@ h2 a {
   background-image: -o-linear-gradient(left, #0071b9, #5dc5ed);
   background-image: -webkit-gradient(linear, left, right, from(#0071b9), to(#5dc5ed));
   background-image: linear-gradient(left, #0071b9, #5dc5ed);
-  width: 45vw;
+  width: 100%;
   padding: 0;
 }
 /*
@@ -1311,7 +1321,7 @@ p.menu-title {
   top: auto;
   right: auto;
   margin: -2px 0 0 0;
-  color: #0071b9;
+  color: #53606b;
   line-height: 1;
   text-align: right;
   float: right;
@@ -1345,7 +1355,7 @@ p.menu-title {
   margin-top: 0;
 }
 .mobile-menu li.current-menu-item a {
-  color: #0071b9;
+  color: #57c0e8;
 }
 .mobile-menu a {
   font-size: 1.8rem;
@@ -1358,7 +1368,7 @@ p.menu-title {
   padding: 12px 50% 12px 0;
 }
 .mobile-menu a:hover {
-  color: #0071b9;
+  color: #57c0e8;
 }
 .mobile-menu .sub-menu li {
   background-color: #5DC5ED;
@@ -1603,7 +1613,7 @@ main.nobanner {
 .home .banner {
   margin: 0;
   height: 100%;
-  max-height: 660px;
+  max-height: 500px;
   padding: 0;
 }
 .home .banner:before {
@@ -1733,7 +1743,7 @@ section.gallery {
 }
 .brochure-link {
   font-size: 0;
-  background-color: #404040;
+  background-color: #53606b;
   width: 650px;
   max-width: 650px;
   position: absolute;
@@ -2104,25 +2114,50 @@ body.loaded {
     display: none;
   }
 }
+@media (max-width: 480px) {
+  .banner h1,
+  h1 {
+    font-size: 4.4rem;
+  }
+  h2 {
+    font-size: 3.8rem;
+  }
+}
+@media (max-width: 479px) {
+  .site-header .custom-logo {
+    width: 50%;
+  }
+  .headerlogo-wrapper {
+    padding-top: 10vh;
+  }
+}
+@media (max-width: 530px) {
+  a.button {
+    width: 100%;
+    margin: 1em 0 0;
+  }
+  a.button:first-child {
+    margin-top: 0;
+  }
+}
+@media (max-width: 640px) {
+  #main .main-gallery-wrapper .row > div {
+    width: 100%;
+  }
+}
 @media (min-width: 640px) {
   p.menu-title {
     display: block;
   }
 }
-@media (max-width: 1120px) {
-  /*
-    .page-sections .module{
-        display:inline-block;
-    }
-*/
-}
-@media (max-width: 1200px) {
-  main > .uk-container {
-    border: none;
+@media (max-width: 720px) {
+  .brochure-link {
+    width: 100%;
   }
-  .left-column,
-  .right-column {
-    background-image: none;
+}
+@media (min-width: 768px) {
+  .uk-offcanvas {
+    width: 50%;
   }
 }
 @media (max-width: 959px) {
@@ -2149,40 +2184,20 @@ body.loaded {
     margin: 0;
   }
 }
-@media (max-width: 720px) {
-  .brochure-link {
-    width: 100%;
-  }
+@media (max-width: 1120px) {
+  /*
+    .page-sections .module{
+        display:inline-block;
+    }
+*/
 }
-@media (max-width: 640px) {
-  #main .main-gallery-wrapper .row > div {
-    width: 100%;
+@media (max-width: 1200px) {
+  main > .uk-container {
+    border: none;
   }
-}
-@media (max-width: 530px) {
-  a.button {
-    width: 100%;
-    margin: 1em 0 0;
-  }
-  a.button:first-child {
-    margin-top: 0;
-  }
-}
-@media (max-width: 480px) {
-  .banner h1,
-  h1 {
-    font-size: 4.4rem;
-  }
-  h2 {
-    font-size: 3.8rem;
-  }
-}
-@media (max-width: 479px) {
-  .site-header .custom-logo {
-    width: 50%;
-  }
-  .headerlogo-wrapper {
-    padding-top: 10vh;
+  .left-column,
+  .right-column {
+    background-image: none;
   }
 }
 /*# sourceMappingURL=/var/www/public/wordpress/wp-content/themes/winerack/style.css.map */

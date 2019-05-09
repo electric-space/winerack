@@ -16,13 +16,17 @@ h2 a{
 
 /* header nav */
 
-// mobile menu
-
+/**
+ * mobile menu
+ */ 
+.uk-offcanvas{
+    width:100%;
+}
 
 .uk-offcanvas-bar{
     .opacity(0.9);
     .gradient(#0071b9, #5dc5ed);
-    width:45vw;
+    width:100%;
     //top:85px;
     padding:0;
     
@@ -91,7 +95,7 @@ p.menu-title{
         right:auto;
         float:right;
         margin:-2px 0 0 0;
-        color:@blue;
+        color:@grey-dark;
         line-height:1;
         text-align: right;
         float:right;
@@ -128,7 +132,7 @@ p.menu-title{
         }
     }
     li.current-menu-item a{
-        color:@blue;
+        color:@blue-light;
     }
     a{
         font-size:1.8rem;
@@ -140,7 +144,7 @@ p.menu-title{
         text-decoration: none;
         padding:12px 50% 12px 0;
         &:hover{
-            color:@blue;
+            color:@blue-light;
    
         }
     }
