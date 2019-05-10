@@ -56,7 +56,9 @@ get_header();?>
                 
             <?php include(locate_template('support/partials/page-columns.php'));?>
             
-            <?php the_field('interior_specification', 8) ;?>
+            <?php if( !is_page(669)) the_field('interior_specification', 8);?>
+            
+            <?php echo do_shortcode('[plan_icons]') ;?>
                 
                 
             </div>

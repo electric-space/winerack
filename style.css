@@ -1,7 +1,7 @@
 
 /* THIS CSS WAS COMPILED AND OPTIMIZED, USING THE WP COMPILER PLUGIN */
 /* https://bytes.co */
-/* Last Compiled: 2019-05-09 9:52:27 UTC */
+/* Last Compiled: 2019-05-10 4:57:12 UTC */
 
 /*!
 Theme Name: winerack
@@ -1595,7 +1595,7 @@ main.nobanner {
   padding-top: 85px;
 }
 .banner {
-  height: 500px;
+  max-height: 500px;
   padding-top: 132px;
   background-size: cover;
   background-repeat: no-repeat;
@@ -1661,6 +1661,9 @@ section.gallery {
 }
 .page-template-page-apart-inner .module.quarter {
   margin-top: 24px;
+}
+.page-id-669 .spec {
+  display: none;
 }
 .module a.button {
   display: block;

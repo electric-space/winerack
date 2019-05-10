@@ -106,6 +106,7 @@ function plan_func(){
             if( $column['acf_fc_layout'] == 'quad_columns'):
             
                 $plan = '
+                <h2>The full collection</h2>
                 <div class="uk-grid uk-margin-top uk-text-center" uk-grid>
                     <div class="uk-width-1-4@m">
                         '.$column['col1'].'
@@ -487,10 +488,11 @@ function column_func( $atts, $content = null ) {
     
 	extract( shortcode_atts( array(
 		'align' => '',
-		'width' => ''
+		'width' => '',
+		'class' => ''
 	), $atts ) );
 
-	return '<div class="page-column '.$align.'" style="width:'.$width.'px">'.
+	return '<div class="page-column '.$align.$class.'" style="width:'.$width.'px">'.
 			do_shortcode($content).
 			'</div>';
 }
