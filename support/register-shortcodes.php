@@ -226,7 +226,7 @@ function plans_func($atts){
             $nicename = ucwords( str_ireplace('-', ' ', $plan['file']['title'] ) );
             $pdf .= '<div>
                 <h3 class="uk-text-center">'.$nicename.'</h3>
-                <a class="button" href="'.$plan['file']['url'].'">'.$text.'</a>';
+                <a class="button" href="'.$plan['file']['url'].'" target="_blank">'.$text.'</a>';
                 
             if( $plan['floor_diagram']){
                 
