@@ -1,7 +1,7 @@
 
 /* THIS CSS WAS COMPILED AND OPTIMIZED, USING THE WP COMPILER PLUGIN */
 /* https://bytes.co */
-/* Last Compiled: 2019-05-13 10:00:08 UTC */
+/* Last Compiled: 2019-05-13 10:34:14 UTC */
 
 /*!
 Theme Name: winerack
@@ -1598,8 +1598,7 @@ main.nobanner {
   padding-top: 85px;
 }
 .banner {
-  height: 100%;
-  max-height: 500px;
+  height: 500px;
   padding-top: 132px;
   background-size: cover;
   background-repeat: no-repeat;
