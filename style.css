@@ -1,7 +1,7 @@
 
 /* THIS CSS WAS COMPILED AND OPTIMIZED, USING THE WP COMPILER PLUGIN */
 /* https://bytes.co */
-/* Last Compiled: 2019-05-13 11:50:17 UTC */
+/* Last Compiled: 2019-05-13 12:13:45 UTC */
 
 /*!
 Theme Name: winerack
@@ -1123,18 +1123,26 @@ h2 {
   font-size: 4.8rem;
   text-align: center;
 }
-h2:before {
-  content: '';
-  display: block;
-  background-image: url('images/divider.png');
-  background-repeat: no-repeat;
-  width: 55px;
-  height: 54px;
-  margin: 0 auto 30px;
+/*
+h2:before{
+    content:'';
+    display:block;
+    background-image: url('images/divider.png');
+    background-repeat: no-repeat;
+    width:55px;
+    height: 54px;
+    margin:0 auto 30px;
+
 }
-.first-section > h2:before {
-  content: none;
+
+.first-section > h2{
+    //margin-top:0;
+    &:before{
+        content:none;
+    }
+    
 }
+*/
 h2.nologo {
   margin: 24px 0 0 10px;
 }
