@@ -1,7 +1,7 @@
 
 /* THIS CSS WAS COMPILED AND OPTIMIZED, USING THE WP COMPILER PLUGIN */
 /* https://bytes.co */
-/* Last Compiled: 2019-05-13 12:13:45 UTC */
+/* Last Compiled: 2019-05-13 1:40:53 UTC */
 
 /*!
 Theme Name: winerack
@@ -2172,6 +2172,24 @@ body.loaded {
 @media (min-width: 640px) {
   p.menu-title {
     display: block;
+  }
+}
+@media (max-height: 700px) {
+  .mobile-menu li {
+    margin: 0;
+    line-height: 1.2em;
+  }
+  .mobile-menu li a {
+    padding-right: 0;
+    text-align: center;
+  }
+  .close-wrapper {
+    padding-right: 0;
+    text-align: center;
+  }
+  .close-wrapper a.close-menu {
+    margin: 0 auto;
+    float: none;
   }
 }
 @media (max-width: 720px) {
