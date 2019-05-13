@@ -1,7 +1,7 @@
 
 /* THIS CSS WAS COMPILED AND OPTIMIZED, USING THE WP COMPILER PLUGIN */
 /* https://bytes.co */
-/* Last Compiled: 2019-05-13 10:34:14 UTC */
+/* Last Compiled: 2019-05-13 11:50:17 UTC */
 
 /*!
 Theme Name: winerack
@@ -2120,21 +2120,31 @@ body.loaded {
     display: none;
   }
 }
-@media (max-width: 480px) {
+@media (max-width: 479px) {
   .banner h1,
   h1 {
     font-size: 4.4rem;
+    margin-bottom: 12px;
   }
   h2 {
     font-size: 3.8rem;
   }
-}
-@media (max-width: 479px) {
   .site-header .custom-logo {
     width: 50%;
   }
   .headerlogo-wrapper {
     padding-top: 10vh;
+  }
+  .banner {
+    height: 50vh;
+    padding-top: 100px;
+  }
+  .banner img {
+    width: 85px;
+  }
+  .banner .help-to-buy-logo {
+    top: auto;
+    width: 35%;
   }
 }
 @media (max-width: 530px) {
