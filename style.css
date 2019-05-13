@@ -1,7 +1,7 @@
 
 /* THIS CSS WAS COMPILED AND OPTIMIZED, USING THE WP COMPILER PLUGIN */
 /* https://bytes.co */
-/* Last Compiled: 2019-05-13 2:33:41 UTC */
+/* Last Compiled: 2019-05-13 2:46:13 UTC */
 
 /*!
 Theme Name: winerack
@@ -1930,7 +1930,7 @@ label {
 }
 /* Custom CF7 Loader */
 div.wpcf7 .ajax-loader {
-  background-image: url('../../images/ajax-loader.gif');
+  background-image: url('images/ajax-loader.gif');
   margin-left: 10px;
 }
 .search-form {
