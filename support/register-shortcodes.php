@@ -10,7 +10,7 @@ function get_quarters($args=null){
     $ar = array(669, 671, 673, 675);
     $quart = '';
 
-    $quart .= '<div class="uk-child-width-1-4@l uk-child-width-1-2@m" uk-grid>';
+    $quart .= '<div class="uk-child-width-1-4@l uk-child-width-1-2@s" uk-grid>';
     
     foreach( $ar as $quarter ){
         
