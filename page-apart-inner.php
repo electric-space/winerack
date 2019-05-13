@@ -56,9 +56,24 @@ get_header();?>
                 
             <?php include(locate_template('support/partials/page-columns.php'));?>
             
-            <?php if( !is_page(669)) the_field('interior_specification', 8);?>
+           <?php 
+               if( !is_page(669)){
+                    the_field('interior_specification', 8);
+                    if( $cols =  get_field('additional_content', 8) ){
+                        echo '<div class="uk-child-width-1-2@m uk-margin-top interior-spec" uk-grid>';
+                        foreach( $cols as $col ){
+                            echo '<div>'.$col['addt_content'].'</div>';
+                        }
+                        
+                        echo '</div>';
+                        
+                        echo '<p class="uk-text-center">'.do_shortcode('[brochure text="Download Q3 brochure"] [contact]').'</p>';
+                    }
+                }
+                    
+                    ?>
             
-            <?php echo do_shortcode('[plan_icons]') ;?>
+           <?php echo do_shortcode('[plan_icons]') ;?>
                 
                 
             </div>
