@@ -11,7 +11,7 @@
 
     <section class="banner">
     
-        <div class="uk-position-relative" uk-slideshow="autoplay: false; max-height:500">
+        <div class="uk-position-relative" uk-slideshow="autoplay: true; max-height:500">
             
             <div class="uk-visible-toggle">
             
